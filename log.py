@@ -7,8 +7,13 @@ logging.basicConfig(level=logging.INFO, filename="py_log.log",filemode="a",
 
 
 def log(op,res):
-    logging.info(f"{op} successful with result: {res}.")
+    logging.info(f'{op} successful with result: {res}.')
 
 def write_log(op,res):
     print(f'{op} = {res}')
    
+def log_error(op):
+    logging.error(f'{op} ValueError')
+
+def write_error_log(op):
+    print(f'{op} ValueError')
