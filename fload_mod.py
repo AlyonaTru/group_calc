@@ -1,3 +1,5 @@
+from log.py import log_error
+
 # inner function of number conversion
 def make_float(tofloat: str) -> float:
     neg = False
@@ -7,7 +9,7 @@ def make_float(tofloat: str) -> float:
     try:
         tofloat = float(tofloat)
     except ValueError:
-        return -1
+        log_error('Ошибка при обработке выражения ')
     if neg:
         return -tofloat
     else:
