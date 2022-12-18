@@ -47,17 +47,17 @@ def calculate(expr):
         elif char.isspace:
             pass
         else:
-            raise Exception("Ошибочка: " + char)
+            raise Exception("Error: " + char)
     return operations[operation](int(numxChars), int(numyChars))
 
-print(calculate(input("Ввод _ 2_ : ")))
+print(calculate(input("Input _ 2_ : ")))
 
 
 def percentage(part, whole):
   percentage = 100 * float(part)/float(whole)
   return str(percentage) + "%"
 
-print("VIVOD, к примеру 3,5 : Вывод _ 3 _ : " + percentage(3,5))
+print("VIVOD, ex.: 3,5 : Output _ 3 _ : " + percentage(3,5))
 
 
 
@@ -67,16 +67,16 @@ def percent(expression):
     return eval(expression)
 
 
-print(percent(input("Ввод _ 4 _ : ")))
+print(percent(input("Input _ 4 _ : ")))
 
 
 def square(nums):
-    print("Исходный список целых чисел:")
+    print("Source list of integers:")
     print(nums)
-    print("\nКвадратное каждое число в указанном списке:")
+    print("\nSquare integer specified in the list above:")
     square_nums = list(map(lambda x: x ** 2, nums))
     print(square_nums)
-    print("\nКуб каждое число указанного списка:")
+    print("\nCube of each integer specified in the list above:")
     cube_nums = list(map(lambda x: x ** 3, nums))
     print(cube_nums)
 
