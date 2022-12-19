@@ -9,7 +9,7 @@ def make_float(tofloat: str) -> float:
     try:
         tofloat = float(tofloat)
     except ValueError:
-        log_error('Ошибка при обработке выражения ')
+        log_error('Error of expression processing ')
     if neg:
         return -tofloat
     else:

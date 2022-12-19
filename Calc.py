@@ -19,10 +19,10 @@ def line_input():
     check = True
     while check:
         try:
-            line_str = (input('Для выхода введите Q. Введите выражение: '))
+            line_str = (input('Enter Q to exit. Enter the math expression: '))
             check = False
         except ValueError:
-            print('\033[31mНеверный ввод!\033[0m')
+            print('\033[31mWrong input!\033[0m')
     brake_line_str = line_str
     sign_input()
 
@@ -61,7 +61,7 @@ def switch():
         for i in range(len(sign_lst)):
             operations_priority()
     else:
-        print('\033[31mНеверный ввод!\033[0m')
+        print('\033[31mWrong input!\033[0m')
         line_input()
 
 
